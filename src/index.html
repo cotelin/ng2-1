@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Angular 2 QuickStart</title>
+    <!-- Angular Material CSS now available via Google CDN; version 0.11.2 used here -->
+    <!--link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css"-->
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.0-rc4/angular-material.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        body{ background-color: silver; height: auto}
+    </style>
+    <script src="../node_modules/systemjs/dist/system.src.js"></script>
+    <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="../node_modules/angular2/bundles/http.dev.js"></script>
+    <script src="../node_modules/angular2/bundles/router.dev.js"></script>
+    <script>
+        System.config({
+            packages: {'app': {defaultExtension: 'js'}}
+        });
+        System.import('app/bootstrap');
+    </script>
+</head>
+<body>
+<my-app>loading...</my-app>
+</body>
+</html>
