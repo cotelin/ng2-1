@@ -26,8 +26,7 @@ import {DislikeArticle} from "./dislike-article.component";
                     <button-dislike-article [article]="article"></button-dislike-article>
                 </div>
                 <div class="article-body">
-                <p><img class="header-img" src="{{article.small_image}}">{{article.body}}</p>
-
+                    <p><img class="header-img" src="{{article.small_image}}">{{article.body}}</p>
                 </div>
                 </div>
 
@@ -89,8 +88,9 @@ width:100%;
     text-shadow: rgba(255, 255, 255, 0.44) 0px 1px;
 
 }
-.article_body{
-font-size:larger;
+.article-body{
+    font-size:larger;
+    background-color: rgba(222, 234, 231, 0.3);
 }
 .article-body p:first-child:first-letter {
 float: left; color: #903;

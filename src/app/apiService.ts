@@ -59,8 +59,8 @@ export class ApiService{
 
         article.title = data.title;
         article.id = data.id;
-        article.big_image = data.url;
-        article.small_image = data.thumbnailUrl;
+        article.big_image = 'http://lorempixel.com/1280/700?temp='+data.id;//data.url;
+        article.small_image = 'http://lorempixel.com/400/400?temp='+data.id;//data.thumbnailUrl;
 
         return article;
     };
